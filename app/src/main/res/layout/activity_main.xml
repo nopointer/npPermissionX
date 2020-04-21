@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_viewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="49dp" />
+
+    <RelativeLayout
+        android:id="@+id/ref_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true">
+
+
+        <RadioGroup
+            android:id="@+id/pageGroup"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="3.3dp"
+            android:paddingBottom="3.3dp">
+
+            <RadioButton
+                android:id="@+id/page1"
+                style="@style/menu_radio_button"
+                android:checked="true"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/page2"
+                style="@style/menu_radio_button"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/page3"
+                style="@style/menu_radio_button"
+                android:text="3" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

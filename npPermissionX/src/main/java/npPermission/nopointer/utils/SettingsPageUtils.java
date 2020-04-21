@@ -1,0 +1,33 @@
+package npPermission.nopointer.utils;
+
+import android.content.Context;
+import android.content.Intent;
+import android.provider.Settings;
+
+public class SettingsPageUtils {
+
+    private SettingsPageUtils() {
+    }
+
+
+    /**
+     * 跳转设置页面
+     *
+     * @param context
+     */
+    public static void toToSettingsPage(Context context) {
+        context.startActivity(new Intent(Settings.ACTION_SETTINGS));
+    }
+
+
+    public static void goToSavePowerPage(Context context) {
+        context.startActivity(new Intent(Settings.ACTION_BATTERY_SAVER_SETTINGS));
+    }
+
+
+    public static void goToSettingPage(Context context, PageType pageType) {
+        PhoneRomSysPage.goToSettingPage(context, pageType);
+    }
+
+
+}
